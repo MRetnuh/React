@@ -10,3 +10,21 @@ function Producto({Titulo, Descripcion, Precio, srcImagen}) {
   )
 }
 export default Producto
+
+/* se crea/usa otro archivo (App.jsx) y se importa éste */
+
+import React from 'react'
+import Producto from './Producto'
+
+function App() {
+   return(
+     <Producto
+       Titulo='Nike'
+SrcImagen='https://twitter.com/SrLuchoPortuano/status/1699487861270274543/photo/1'
+Descripcion='zapatillas piolas'
+       Precio='15000'
+     />
+)
+
+}
+export default App
